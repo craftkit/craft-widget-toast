@@ -1,0 +1,36 @@
+{
+  "name": "@craftkit/craft-widget-toast",
+  "version": "1.0.0",
+  "description": "Toast is a Craft-UIKit component that provides a simple way to display a message to the user.",
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "dist/craft-widget-toast.min.js",
+  "dependencies": {
+    "@craftkit/craft-uikit": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "wabpack --config config/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craftkit/craft-widget-toast.git"
+  },
+  "keywords": [
+    "WebComponents",
+    "Shadow DOM",
+    "OOP",
+    "SPA",
+    "PWA",
+    "frontend",
+    "UI widget",
+    "Toast"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craftkit/craft-widget-toast/issues"
+  },
+  "homepage": "https://github.com/craftkit/craft-widget-toast"
+}
