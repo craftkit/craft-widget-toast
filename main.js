@@ -1,9 +1,7 @@
 
 import { Toast } from './src/Toast.js';
 
-const Packages = {
-	Toast : Toast
-};
+const Packages = Toast;
 
 Packages.inject = function(Craft){
 	Craft.Widget = Craft.Widget || {};

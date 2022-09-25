@@ -10,18 +10,18 @@ import { ToastPanel } from './ToastPanel.js';
  * 
  * @example
  * 
- * const toast = new Toast();
+ * const toast = new Craft.Widget.Toast();
  * this.appendView(toast);
+ * 
  * toast.show("Hello World");
  * 
- * const toast = new Craft.Widget.Toast({
+ * toast.show({
  *     title    : "My first toast",
  *     message  : "This is my first toast",
  *     color    : "green",
  *     opacity  : 0.8,
  *     duration : 3000
  * });
- * toast.show();
  * 
  */
 export class Toast extends Craft.UI.View {
@@ -34,7 +34,6 @@ export class Toast extends Craft.UI.View {
     constructor(options) {
         super();
         this.packagename = "Craft.Widget.Toast";
-        if (!options) { options = {}; }
     }
 
     show(options) {
