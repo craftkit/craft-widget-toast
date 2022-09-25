@@ -8,7 +8,9 @@
   "dependencies": {
     "@craftkit/craft-uikit": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  },
   "scripts": {
     "build": "wabpack --config config/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
