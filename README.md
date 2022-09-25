@@ -12,8 +12,8 @@ npm install @craftkit/craft-widget-toast
 
 ```js
 import * as Craft from "@craftkit/craft-uikit";
-
-import { Toast } from "@craftkit/toast";
+import * as Toast from "@craftkit/craft-widget-toast";
+Craft.usePackage(Toast);
 
 class Page extends Craft.UI.View {
   constructor(options) {
@@ -23,7 +23,7 @@ class Page extends Craft.UI.View {
   }
 
   viewDidLoad(callback) {
-    this.views.toast = new Toast();
+    this.views.toast = new Craft.Widget.Toast();
     this.appendView(this.views.toast);
 
     if (callback) {
