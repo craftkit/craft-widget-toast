@@ -6,7 +6,7 @@ import { ToastPanel } from './ToastPanel.js';
 /** 
  * Toast 
  * 
- * @packagename TicketForge.Framework.Toast
+ * @packagename Craft.Widget.Toast
  * 
  * @example
  * 
@@ -14,7 +14,7 @@ import { ToastPanel } from './ToastPanel.js';
  * this.appendView(toast);
  * toast.show("Hello World");
  * 
- * const toast = new TicketForge.Framework.Toast({
+ * const toast = new Craft.Widget.Toast({
  *     title    : "My first toast",
  *     message  : "This is my first toast",
  *     color    : "green",
@@ -33,7 +33,7 @@ export class Toast extends Craft.UI.View {
      */
     constructor(options) {
         super();
-        this.packagename = "TicketForge.Framework.Toast";
+        this.packagename = "Craft.Widget.Toast";
         if (!options) { options = {}; }
     }
 

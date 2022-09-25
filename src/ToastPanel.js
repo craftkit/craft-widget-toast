@@ -15,7 +15,7 @@ export class ToastPanel extends Craft.UI.View {
      */
     constructor(options) {
         super();
-        this.packagename = "TicketForge.Framework.ToastPanel";
+        this.packagename = "Craft.Widget.ToastPanel";
 
         if (!options) { options = {}; }
 
