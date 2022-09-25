@@ -1,6 +1,6 @@
 {
   "name": "@craftkit/craft-widget-toast",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Toast is a Craft-UIKit component that provides a simple way to display a message to the user.",
   "main": "index.js",
   "module": "index.js",
