@@ -11,6 +11,9 @@ import { ToastPanel } from './ToastPanel.js';
  * @example
  * 
  * const toast = new Craft.Widget.Toast();
+ * 
+ * // quick toast with current view
+ * 
  * this.appendView(toast);
  * 
  * toast.show("Hello World");
@@ -21,6 +24,17 @@ import { ToastPanel } from './ToastPanel.js';
  *     color    : "green",
  *     opacity  : 0.8,
  *     duration : 3000
+ * });
+ * 
+ * // toast with RootViewController (recommended)
+ * 
+ * Craft.Core.Context.getRootViewController().appendView(toast);
+ * 
+ * toast.show({
+ *    message  : "This is my first toast",
+ *    callback : () => {
+ *       toast.removeFromParent();
+ *    }
  * });
  * 
  */

@@ -12,6 +12,7 @@ export class ToastPanel extends Craft.UI.View {
      * @param {string} options.textColor - text color
      * @param {number} options.opacity - opacity
      * @param {number} options.duration - duration
+     * @param {function} options.callback - callback
      */
     constructor(options) {
         super();
@@ -25,6 +26,7 @@ export class ToastPanel extends Craft.UI.View {
         this.textColor = options.textColor || "white";
         this.opacity = options.opacity || 0.8;
         this.duration = options.duration || 3000;
+        this.callback = options.callback;
     }
 
     viewDidAppear(callback) {
@@ -40,6 +42,9 @@ export class ToastPanel extends Craft.UI.View {
                         properties: { "opacity": 0 },
                         duration: 100,
                         callback: () => {
+                            if (this.callback) {
+                                this.callback();
+                            }
                             this.unloadView();
                         }
                     });
